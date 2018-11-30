@@ -47,6 +47,7 @@ use pocketmine\command\CommandSender;
 use pocketmine\command\Command;
 
 use pocketmine\nbt\NBT;
+use pocketmine\nbt\NetworkLittleEndianNBTStream;
         #Use these for PHP7
 use pocketmine\nbt\tag\CompoundTag as Compound;
 use pocketmine\nbt\tag\StringTag as Str;
@@ -92,7 +93,7 @@ class SWmain extends PluginBase
         try {
             foreach (scandir($this->getServer()->getDataPath() . "\x77\x6f\x72\x6c\x64\x73") as $worldDir) {
                 if (is_dir($this->getServer()->getDataPath() . "\x77\x6f\x72\x6c\x64\x73\x2f" . $worldDir) && is_file($this->getServer()->getDataPath() . "\x77\x6f\x72\x6c\x64\x73\x2f" . $worldDir . "\x2f\x6c\x65\x76\x65\x6c\x2e\x64\x61\x74")) {
-                    $nbt = new NBT(NBT::BIG_ENDIAN);
+                    $nbt = new NetworkLittleEndianNBTStream;
                     $nbt->readCompressed(file_get_contents($this->getServer()->getDataPath() . "\x77\x6f\x72\x6c\x64\x73\x2f" . $worldDir . "\x2f\x6c\x65\x76\x65\x6c\x2e\x64\x61\x74"));
                     $levelData = $nbt->getData();
                     if (array_key_exists("\x44\x61\x74\x61", $levelData) && $levelData["\x44\x61\x74\x61"] instanceof Compound) {
