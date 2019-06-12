@@ -41,10 +41,10 @@
 namespace svile\sw;
 
 
-use pocketmine\scheduler\PluginTask;
+use pocketmine\scheduler\Task;
 
 
-class SWtimer extends PluginTask
+class SWtimer extends Task
 {
     /** @var int */
     private $seconds = 0;
