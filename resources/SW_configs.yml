@@ -36,7 +36,7 @@ banned.commands.while.in.game:
 start.when.full: true
 
 # The countdown will only run when there will be N players in the arena.
-needed.players.to.run.countdown: 1
+needed.players.to.run.countdown: 2
 
 # ------------------------------------------HEALTH------------------------------------------
 #              1 = half a heart
@@ -74,7 +74,7 @@ damage.cancelled.causes:
 - 3
 
 # Players playing a SkyWars game won't drop anything on death if this option = "false".
-drops.on.death: false
+drops.on.death: true
 
 # Players playing a SkyWars game won't be able to drop items if this option = "false".
 player.drop.item: true
@@ -89,7 +89,7 @@ chest.refill.rate: 240
 
 # After the game start, players won't be able to PvP for N seconds (default 20).
 # N.B : To disable this just put 0 seconds.
-no.pvp.countdown: 20
+no.pvp.countdown: 15
 
 # Spectator gamemode for killed players.
 # N.B : Players will be able to fly far away.
@@ -118,8 +118,8 @@ reward.command: '/'
 ########################################_JOIN-SIGNS_########################################
 
 # Signs format.
-1st_line: Â§lÂ§c[Â§bSWÂ§c]
-2nd_line: Â§lÂ§e{SWNAME}
+1st_line: §l§c[§bSW§c]
+2nd_line: §l§e{SWNAME}
 
 # Refreshes signs each 5 seconds.
 # Hint : This is useful if you often see signs displaying wrong info about SW games.
