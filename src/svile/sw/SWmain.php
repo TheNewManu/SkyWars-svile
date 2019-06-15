@@ -167,7 +167,7 @@ class SWmain extends PluginBase
             'needed.players.to.run.countdown' => 2,
             'join.max.health' => 20,
             'join.health' => 20,
-            'damage.cancelled.causes' => [3],
+            'damage.cancelled.causes' => [3, 16],
             'drops.on.death' => false,
             'player.drop.item' => true,
             'chest.refill' => true,
