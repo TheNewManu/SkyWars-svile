@@ -88,6 +88,7 @@ class SWmain extends PluginBase
     {
         if (!is_dir($this->getDataFolder()))
             @mkdir($this->getDataFolder() . "\x61\x72\x65\x6e\x61\x73", 0755, true);
+            @mkdir($this->getDataFolder() . "arenas");
 
         //This changes worlds NBT name with folders ones to avoid problems //world folder name should be used instead of doing this
         try {
