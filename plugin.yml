@@ -1,5 +1,5 @@
 name: SW_svile
-author: svile
+authors: ["svile", "TheNewManu"]
 description: SkyWars plugin
 main: svile\sw\SWmain
 version: 0.7dev
